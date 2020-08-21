@@ -66,6 +66,16 @@ yargs.command({
   }
 })
 
+// List all notes
+
+yargs.command({
+  command: 'list',
+  describe: 'List all notes',
+  handler(){
+    notes.listNotes()
+  }
+})
+
 //add, remove, read, list
 
 
